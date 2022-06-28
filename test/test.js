@@ -1,18 +1,18 @@
 import { expect } from "chai";
-import { question1 } from "../app/question1.js";
+import { nthPrimeNumber } from "../app/question1.js";
 import { question2 } from "../app/question2.js";
 
 // Test 1 to test the outputs of the first script
 describe("Test 1", function () {
   describe("Subtitle", function () {
     it("description text", function () {
-      let testCase1 = question1("inputs");
-      let testCase2 = question1("inputs");
-      let testCase3 = question1("inputs");
+      let testCase1 = nthPrimeNumber(1);
+      let testCase2 = nthPrimeNumber(2);
+      let testCase3 = nthPrimeNumber(10001);
 
-      expect(testCase1).to.equal("output");
-      expect(testCase2).to.equal("output");
-      expect(testCase3).to.equal("output");
+      expect(testCase1).to.equal(2);
+      expect(testCase2).to.equal(3);
+      expect(testCase3).to.equal(104743);
     });
   });
 });
