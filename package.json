@@ -1,0 +1,32 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "description": "test driven development challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AzureKn1ght/TestDrivenDevelopment.git"
+  },
+  "keywords": [
+    "unit-testing",
+    "mocha",
+    "tdd",
+    "chai",
+    "projecteuler",
+    "test-driven-development",
+    "coding-challenge"
+  ],
+  "author": "Philson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AzureKn1ght/TestDrivenDevelopment/issues"
+  },
+  "homepage": "https://github.com/AzureKn1ght/TestDrivenDevelopment#readme",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  }
+}
