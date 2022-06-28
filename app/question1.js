@@ -1,4 +1,6 @@
 // Function for question 1
-export function question1(input) {
+function question1(input) {
   return "output";
 }
+
+module.exports = { question1 };

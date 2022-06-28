@@ -1,6 +1,6 @@
 var question1 = require("../app/question1");
 var question2 = require("../app/question2");
-import { expect } from "chai";
+var expect = require("chai").expect;
 
 // Test 1 to test the outputs of the first script
 describe("Test 1", function () {
