@@ -1,14 +1,14 @@
-var question1 = require("../app/question1");
-var question2 = require("../app/question2");
-var expect = require("chai").expect;
+import { expect } from "chai";
+import { question1 } from "../app/question1.js";
+import { question2 } from "../app/question2.js";
 
 // Test 1 to test the outputs of the first script
 describe("Test 1", function () {
   describe("Subtitle", function () {
     it("description text", function () {
-      let testCase1 = question1.funcName("inputs");
-      let testCase2 = question1.funcName("inputs");
-      let testCase3 = question1.funcName("inputs");
+      let testCase1 = question1("inputs");
+      let testCase2 = question1("inputs");
+      let testCase3 = question1("inputs");
 
       expect(testCase1).to.equal("output");
       expect(testCase2).to.equal("output");
@@ -21,9 +21,9 @@ describe("Test 1", function () {
 describe("Test 2", function () {
   describe("Subtitle", function () {
     it("description text", function () {
-      let testCase1 = question2.funcName("inputs");
-      let testCase2 = question2.funcName("inputs");
-      let testCase3 = question2.funcName("inputs");
+      let testCase1 = question2("inputs");
+      let testCase2 = question2("inputs");
+      let testCase3 = question2("inputs");
 
       expect(testCase1).to.deep.equal([0, 0, 0]);
       expect(testCase2).to.deep.equal([0, 0, 0]);

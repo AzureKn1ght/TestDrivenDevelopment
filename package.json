@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "test driven development challenge",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "mocha --reporter spec"
   },
