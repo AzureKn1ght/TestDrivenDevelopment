@@ -36,9 +36,11 @@ const isMultiple = (num, n1, n2) => {
 // Function to check for invalid inputs
 const validParameters = (num, n1, n2) => {
   // no negative numbers
-  if (num > 0 || n1 > 0 || n2 > 0) return true;
+  if (num < 0 || n1 < 0 || n2 < 0) return false;
 
   // no invalid ranges
-  if (n1 < num || n2 < num) return true;
-  if (n1 != n2) return true;
+  if (n1 >= num || n2 >= num) return false;
+  if (n1 === n2) return false;
+
+  return true;
 };
