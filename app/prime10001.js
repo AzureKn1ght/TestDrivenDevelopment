@@ -10,10 +10,12 @@ Source: https://projecteuler.net/problem=7
 // Function to find the nth prime number
 export const nthPrimeNumber = (n) => {
   try {
+    // check variable n to be valid
+    if (isNaN(n) || n < 1) throw "Invalid parameter";
     let numPrimes = 0;
     let result = 1;
 
-    // loop until we find n primes
+    // loop until n primes
     while (numPrimes < n) {
       result++;
       if (isPrime(result)) numPrimes++;
@@ -29,7 +31,6 @@ export const nthPrimeNumber = (n) => {
 
 // Function to check if num is prime
 const isPrime = (num) => {
-  if (num <= 1) return false;
   if (num === 2) return true;
 
   for (let i = 2; i <= Math.sqrt(num); i++) {

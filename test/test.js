@@ -1,35 +1,33 @@
 import { expect } from "chai";
-import { nthPrimeNumber } from "../app/question1.js";
-import { question2 } from "../app/question2.js";
+import { nthPrimeNumber } from "../app/prime10001.js";
+import { sumOfMultiples } from "../app/sumOfMultiples.js";
 
-// Test 1 to test the outputs of the first script
+// Test 1 to test the outputs of prime10001.js
 describe("Test 1", function () {
-  describe("Subtitle", function () {
-    it("description text", function () {
-      let testCase1 = nthPrimeNumber(1);
-      let testCase2 = nthPrimeNumber(2);
-      let testCase3 = nthPrimeNumber(10001);
+  describe("Problem 7", function () {
+    it("What is the 10001st prime number", function () {
+      let testCase1 = nthPrimeNumber(6);
+      let testCase2 = nthPrimeNumber(10001);
+      let testCase3 = nthPrimeNumber(-1);
 
-      expect(testCase1).to.equal(2);
-      expect(testCase2).to.equal(3);
-      expect(testCase3).to.equal(104743);
+      expect(testCase1).to.equal(13);
+      expect(testCase2).to.equal(104743);
+      expect(testCase3).to.equal(null);
     });
   });
 });
 
 // Test 2 to test the outputs of the second script
 describe("Test 2", function () {
-  describe("Subtitle", function () {
-    it("description text", function () {
-      let testCase1 = question2("inputs");
-      let testCase2 = question2("inputs");
-      let testCase3 = question2("inputs");
+  describe("Problem 1", function () {
+    it("Find the sum of all the multiples of 3 or 5 below 1000", function () {
+      let testCase1 = sumOfMultiples(10, 3, 5);
+      let testCase2 = sumOfMultiples(1000, 3, 5);
+      let testCase3 = sumOfMultiples(-1, -1, -1);
 
-      expect(testCase1).to.deep.equal([0, 0, 0]);
-      expect(testCase2).to.deep.equal([0, 0, 0]);
-      expect(testCase3).to.deep.equal([0, 0, 0]);
-
-      /*Used the deep.equal because we were comparing two nested objects. The .deep part tells Chai to match all the elements of the arrays, one by one.*/
+      expect(testCase1).to.equal(23);
+      expect(testCase2).to.equal(233168);
+      expect(testCase3).to.equal(null);
     });
   });
 });
