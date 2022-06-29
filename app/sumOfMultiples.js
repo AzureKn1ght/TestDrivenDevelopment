@@ -7,7 +7,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 Source: https://projecteuler.net/problem=1
 */
 
-// Function for question 2
+// Sums all multiples of n1 & n2 less than max
 export const sumOfMultiples = (max, n1, n2) => {
   try {
     // check if parameters are valid
